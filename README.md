@@ -93,7 +93,7 @@
     ``` json {
         "email": "lewishamilton@gmail.com",
         "password": "123456"
-      }```
+      
   
   
   - POST http://localhost:3000/user
@@ -105,7 +105,7 @@
           "password": "123456",
           "image": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
           // a imagem não é obrigatória
-        } ```
+        
   
   
   - GET http://localhost:3000/user
@@ -122,7 +122,7 @@
 
       ``` json {
           "name": "Typescript"
-        } ```
+        
     
   - GET http://localhost:3000/categories
     - `esse endponit será utilisado para listar todas as categorias`
@@ -136,7 +136,7 @@
           "title": "Latest updates, August 1st",
           "content": "The whole text for the blog post goes here in this key",
           "categoryIds": [1, 2]
-        } ```
+        
     
   - GET http://localhost:3000/post
       - `esse endponit será capaz de trazer todos os blogs post`
@@ -154,7 +154,7 @@
       ``` json {
           "title": "Latest updates, August 1st",
           "content": "The whole text for the blog post goes here in this key"
-        } ```
+        
     
    - DELETE http://localhost:3000/post/:id
       - `esse endponit será utilisado para deletar um post declarando seu id`
