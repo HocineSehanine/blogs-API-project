@@ -108,8 +108,30 @@ JWT_SECRET=suaSenhaSecreta
       -`e será necessário declarar um token valido`
       
     -POST http://localhost:3000/categories
-      -`esse endponit será utilisado para listar todos os usurios`
+      -`esse endponit será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
+      -`{
+          "name": "Typescript"
+        }`
+    
+    -GET http://localhost:3000/categories
+      -`esse endponit será utilisado para listar todas as categorias`
       -`e será necessário declarar um token valido`
       
+    -POST http://localhost:3000/post
+      -`esse endponit será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
+      -`{
+          "title": "Latest updates, August 1st",
+          "content": "The whole text for the blog post goes here in this key",
+          "categoryIds": [1, 2]
+        }`
+    
+    -GET http://localhost:3000/post
+      -`esse endponit será capaz de trazer todos os blogs post`
+      -`e será necessário declarar um token valido`
+  
+    -GET http://localhost:3000/post/:id
+      -`esse endponit será capaz de trazer um post pelo seu id`
+      -`e será necessário declarar um token valido`
+    
      
 </details>
