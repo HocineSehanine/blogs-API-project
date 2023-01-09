@@ -58,18 +58,18 @@
 
   > 👉 `.env.example`
   ```env
-#### SERVER VARS
-NODE_ENV=development
-API_PORT=3000
-API_HOST=localhost
-#### DATABASE VARS
-MYSQL_HOST=localhost
-MYSQL_PORT=3306
-MYSQL_DB_NAME=blogs-api
-MYSQL_USER=root
-MYSQL_PASSWORD=password
-#### SECRECT VARS
-JWT_SECRET=suaSenhaSecreta
+       #### SERVER VARS
+       NODE_ENV=development
+       API_PORT=3000
+       API_HOST=localhost
+       #### DATABASE VARS
+       MYSQL_HOST=localhost
+       MYSQL_PORT=3306
+       MYSQL_DB_NAME=blogs-api
+       MYSQL_USER=root
+       MYSQL_PASSWORD=password
+       #### SECRECT VARS
+       JWT_SECRET=suaSenhaSecreta
   ```
   #### Variável `JWT_SECRET`:
   
@@ -87,14 +87,18 @@ JWT_SECRET=suaSenhaSecreta
   <summary><strong>:memo: para utilização da API</strong></summary><br />
  utilização dos methodos
    
+  <br />
   - POTS http://localhost:3000/login
     - `esse endponit é muito importante pra gerar um token que sera necessário nos proximos passos onde devemos declara o seguinte objeto no body:`
     ```json {
         "email": "lewishamilton@gmail.com",
         "password": "123456"
       }```
+  
+  
    -POST http://localhost:3000/user
-      -`esse endponit será utilisado para criar um novo usurio onde devemos declara o seguinte objeto no body:`
+      - `esse endponit será utilisado para criar um novo usurio onde devemos declara o seguinte objeto no body:`
+  <br />
        ```json {
           "displayName": "Brett Wiltshire",
           "email": "brett@email.com",
@@ -102,26 +106,32 @@ JWT_SECRET=suaSenhaSecreta
           "image": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
           // a imagem não é obrigatória
         }```
+  
+  
     -GET http://localhost:3000/user
-      -`esse endponit será utilisado para listar todos os usurios`
-      -`e será necessário declarar um token valido`
+      - `esse endponit será utilisado para listar todos os usurios`
+      - `e será necessário declarar um token valido`
     
     -GET http://localhost:3000/user/:id
-      -`esse endponit será utilisado para listar um usuario pelo seu id`
-      -`e será necessário declarar um token valido`
+      - `esse endponit será utilisado para listar um usuario pelo seu id`
+      - `e será necessário declarar um token valido`
       
     -POST http://localhost:3000/categories
-      -`esse endponit será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
-      ```json {
+      - `esse endponit será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
+  
+  <br />
+      ``` json {
           "name": "Typescript"
-        }```
+        } ``
     
     -GET http://localhost:3000/categories
-      -`esse endponit será utilisado para listar todas as categorias`
-      -`e será necessário declarar um token valido`
+      - `esse endponit será utilisado para listar todas as categorias`
+      - `e será necessário declarar um token valido`
       
     -POST http://localhost:3000/post
-      -`esse endponit será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
+      - `esse endponit será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
+  
+  <br />
       ```json {
           "title": "Latest updates, August 1st",
           "content": "The whole text for the blog post goes here in this key",
@@ -129,15 +139,17 @@ JWT_SECRET=suaSenhaSecreta
         }```
     
     -GET http://localhost:3000/post
-      -`esse endponit será capaz de trazer todos os blogs post`
-      -`e será necessário declarar um token valido`
+      - `esse endponit será capaz de trazer todos os blogs post`
+      - `e será necessário declarar um token valido`
   
     -GET http://localhost:3000/post/:id
-      -`esse endponit será capaz de trazer um post pelo seu id`
-      -`e será necessário declarar um token valido`
+      - `esse endponit será capaz de trazer um post pelo seu id`
+      - `e será necessário declarar um token valido`
     
     -POST http://localhost:3000/post/:id
-      -`esse endponit será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
+      - `esse endponit será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
+  
+  <br />
       ```json {
           "title": "Latest updates, August 1st",
           "content": "The whole text for the blog post goes here in this key"
