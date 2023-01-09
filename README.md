@@ -89,7 +89,7 @@
    
 
   - POST http://localhost:3000/login
-    - `esse endponit é muito importante pra gerar um token que sera necessário nos proximos passos onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint é muito importante pra gerar um token que sera necessário nos proximos passos onde devemos declara o seguinte objeto no body:`
     ``` json {
         "email": "lewishamilton@gmail.com",
         "password": "123456"
@@ -97,7 +97,7 @@
   
   
   - POST http://localhost:3000/user
-    - `esse endponit será utilisado para criar um novo usurio onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint será utilisado para criar um novo usurio onde devemos declara o seguinte objeto no body:`
   
        ``` json {
           "displayName": "Brett Wiltshire",
@@ -109,15 +109,15 @@
   
   
   - GET http://localhost:3000/user
-    - `esse endponit será utilisado para listar todos os usurios`
+    - `esse endpoint será utilisado para listar todos os usurios`
     - `e será necessário declarar um token válido`
     
   - GET http://localhost:3000/user/:id
-    - `esse endponit será utilisado para listar um usuario pelo seu id`
+    - `esse endpoint será utilisado para listar um usuario pelo seu id`
     - `e será necessário declarar um token válido`
       
   - POST http://localhost:3000/categories
-    - `esse endponit será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
   
 
       ``` json {
@@ -125,11 +125,11 @@
         
     
   - GET http://localhost:3000/categories
-    - `esse endponit será utilisado para listar todas as categorias`
+    - `esse endpoint será utilisado para listar todas as categorias`
     - `e será necessário declarar um token válido`
       
   - POST http://localhost:3000/post
-    - `esse endponit será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
   
 
       ```json {
@@ -139,15 +139,15 @@
         
     
   - GET http://localhost:3000/post
-      - `esse endponit será capaz de trazer todos os blogs post`
+      - `esse endpoint será capaz de trazer todos os blogs post`
       - `e será necessário declarar um token válido`
   
   - GET http://localhost:3000/post/:id
-      - `esse endponit será capaz de trazer um post pelo seu id`
+      - `esse endpoint será capaz de trazer um post pelo seu id`
       - `e será necessário declarar um token válido`
     
   - POST http://localhost:3000/post/:id
-      - `esse endponit será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
+      - `esse endpoint será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
       -  `e será necessário declarar um token válido`
   
 
@@ -157,14 +157,14 @@
         
     
    - DELETE http://localhost:3000/post/:id
-      - `esse endponit será utilisado para deletar um post declarando seu id`
+      - `esse endpoint será utilisado para deletar um post declarando seu id`
       - `e será necessário declarar um token válido `
   
    - DELETE http://localhost:3000/user/me
-      - `esse endponit será utilisado para deletar um usuario atraves de id retirado do token`
+      - `esse endpoint será utilisado para deletar um usuario atraves de id retirado do token`
       - `e será necessário declarar um token válido `
   
    - DELETE http://localhost:3000//post/search?q=:searchTerm
-      - `esse endponit será capaz de trazer os blogs post baseados no q do banco de dados, se ele existir`
+      - `esse endpoint será capaz de trazer os blogs post baseados no q do banco de dados, se ele existir`
       - `e será necessário declarar um token valido`
 </details>
