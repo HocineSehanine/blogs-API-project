@@ -22,9 +22,9 @@
 
   - Utilizar sequelize
   - Utilizar methodos GET POST DELETE PUT 
-  - Utilizar um banco de dados dinamico
-  - Vlidar senhas utilizando jwt
-  - Vlidar inputs utilizando joi
+  - Utilizar um banco de dados dinâmico
+  - Validar senhas utilizando jwt
+  - Validar inputs utilizando joi
   - Utilizar arquitetura Model Service Controller
   - Criar Banco de dados MySql
   
@@ -35,7 +35,7 @@
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@https://github.com/HocineSehanine/blogs-API-project.git`.
+  - Use o comando: `git clone https://github.com/HocineSehanine/blogs-API-project.git`.
   - Entre na pasta do repositório que você acabou de clonar:
     - `cd recipes-app`
 
@@ -110,11 +110,11 @@
   
   - GET http://localhost:3000/user
     - `esse endponit será utilisado para listar todos os usurios`
-    - `e será necessário declarar um token valido`
+    - `e será necessário declarar um token válido`
     
   - GET http://localhost:3000/user/:id
     - `esse endponit será utilisado para listar um usuario pelo seu id`
-    - `e será necessário declarar um token valido`
+    - `e será necessário declarar um token válido`
       
   - POST http://localhost:3000/categories
     - `esse endponit será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
@@ -126,7 +126,7 @@
     
   - GET http://localhost:3000/categories
     - `esse endponit será utilisado para listar todas as categorias`
-    - `e será necessário declarar um token valido`
+    - `e será necessário declarar um token válido`
       
   - POST http://localhost:3000/post
     - `esse endponit será utilisado para adicionar um novo post onde devemos declara o seguinte objeto no body:`
@@ -140,15 +140,15 @@
     
   - GET http://localhost:3000/post
       - `esse endponit será capaz de trazer todos os blogs post`
-      - `e será necessário declarar um token valido`
+      - `e será necessário declarar um token válido`
   
   - GET http://localhost:3000/post/:id
       - `esse endponit será capaz de trazer um post pelo seu id`
-      - `e será necessário declarar um token valido`
+      - `e será necessário declarar um token válido`
     
   - POST http://localhost:3000/post/:id
       - `esse endponit será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
-      -  `e será necessário declarar um token valido`
+      -  `e será necessário declarar um token válido`
   
 
       ``` json {
@@ -158,11 +158,11 @@
     
    - DELETE http://localhost:3000/post/:id
       - `esse endponit será utilisado para deletar um post declarando seu id`
-      - `e será necessário declarar um token valido`
+      - `e será necessário declarar um token válido `
   
    - DELETE http://localhost:3000/user/me
       - `esse endponit será utilisado para deletar um usuario atraves de id retirado do token`
-      - `e será necessário declarar um token valido`
+      - `e será necessário declarar um token válido `
   
    - DELETE http://localhost:3000//post/search?q=:searchTerm
       - `esse endponit será capaz de trazer os blogs post baseados no q do banco de dados, se ele existir`
