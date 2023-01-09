@@ -97,7 +97,7 @@
   
   
   - POST http://localhost:3000/user
-    - `esse endpoint será utilisado para criar um novo usurio onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint será utilisado para criar um novo usuário onde devemos declarar o seguinte objeto no body:`
   
        ``` json {
           "displayName": "Brett Wiltshire",
@@ -109,15 +109,15 @@
   
   
   - GET http://localhost:3000/user
-    - `esse endpoint será utilisado para listar todos os usurios`
+    - `esse endpoint será utilisado para listar todos os usuários`
     - `e será necessário declarar um token válido`
     
   - GET http://localhost:3000/user/:id
-    - `esse endpoint será utilisado para listar um usuario pelo seu id`
+    - `esse endpoint será utilisado para listar um usuário pelo seu id`
     - `e será necessário declarar um token válido`
       
   - POST http://localhost:3000/categories
-    - `esse endpoint será utilisado para adicionar uma nova categoria onde devemos declara o seguinte objeto no body:`
+    - `esse endpoint será utilisado para adicionar uma nova categoria onde devemos declarar o seguinte objeto no body:`
   
 
       ``` json {
