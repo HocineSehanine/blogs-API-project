@@ -148,6 +148,7 @@
     
   - POST http://localhost:3000/post/:id
       - `esse endponit será utilisado para editar um post onde devemos declara o seguinte objeto no body:`
+      -  `e será necessário declarar um token valido`
   
 
       ``` json {
@@ -155,5 +156,15 @@
           "content": "The whole text for the blog post goes here in this key"
         } ```
     
-    
+   - DELETE http://localhost:3000/post/:id
+      - `esse endponit será utilisado para deletar um post declarando seu id`
+      - `e será necessário declarar um token valido`
+  
+   - DELETE http://localhost:3000/user/me
+      - `esse endponit será utilisado para deletar um usuario atraves de id retirado do token`
+      - `e será necessário declarar um token valido`
+  
+   - DELETE http://localhost:3000//post/search?q=:searchTerm
+      - `esse endponit será capaz de trazer os blogs post baseados no q do banco de dados, se ele existir`
+      - `e será necessário declarar um token valido`
 </details>
